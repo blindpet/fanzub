@@ -59,10 +59,10 @@
 <dd>
 	There are countless of Usenet providers. Usually it is best to go with a provider that is located closest to you for fastest download speeds. The biggest providers have server farms in both US and Europe.  It pays to compare prices &amp; features to see which one suits you best. Here are a few good providers (Google for more):<br /><br />
 	<ul>
-		<li> <a href="http://www.giganews.com/">Giganews</a><br />
+		<li> <a href="http://www.htpcguides.com/UsenetServer">UsenetServer</a><br />
 		Industry leader. If you want maximum speed and retention, you probably want to go with them.<br /><br />
 		</li>
-		<li> <a href="http://www.news.astraweb.com/">Astraweb</a><br />
+		<li> <a href="http://www.htpcguides.com/Astraweb">Astraweb</a><br />
 		While their site may not look like much, their service is good. What's especially great is they offer pay-per-download accounts in addition to subscriptions. If you don't download a lot, a $25 account could last you months or even years. Their $10 pay-per-download account is a good choice if you want to check out Usenet but not invest to much or subscribe to anything.</li>
 	</ul>
 </dd>
@@ -72,7 +72,7 @@
 	<ul>
 		<li><b>Usenet Guides</b>
 			<ul>
-				<li> <a href="http://slyck.com/">Slyck</a> </li>
+				<li> <a href="http://www.htpcguides.com/">HTPC Guides</a> </li>
 				<li> <a href="http://www.binaries4all.com/">Binaries4All</a> </li>
 			</ul><br />
 		</li>
