@@ -10,6 +10,8 @@
  */
 require_once('../lib/class.fanzub.php');
 
+try {
+
 // Abort if load exceeds maximum threshold
 #$loadavg = LoadAverage();
 #if (isset($config['option']['cron']['loadlimit']) && ($loadavg !== false) && isset($loadavg[1]) && ($loadavg[1] > $config['option']['cron']['loadlimit']))
@@ -41,4 +43,10 @@ if (!class_exists($object))
 eval('$worker = new '.$object.'();');
 $worker->Run($id);
 unset($worker);
+}
+catch (Exception $e){
+    echo $e->getMessage();
+
+}
+
 ?>
