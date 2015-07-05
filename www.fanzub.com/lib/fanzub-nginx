@@ -1,0 +1,30 @@
+server {
+        server_name default_server;
+        access_log   /var/log/nginx/htpcguides.com.access.log;
+        error_log    /var/log/nginx/htpcguides.com.error.log;
+
+        root /var/www/fanzub/www.fanzub.com/www;
+        index index.php index.htm index.html;
+
+        location / {
+                server_tokens off;
+                port_in_redirect off;
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+        location ~* \.(jpg|jpeg|gif|png|css|ico|js|xml)$ {
+                access_log        off;
+                log_not_found     off;
+                expires           360d;
+        }
+
+        location ~ ^/(bin|SQL|\.ht)/ {
+                deny all;
+        }
+        location ~ \.php$ {
+                try_files $uri =404;
+                include fastcgi_params;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        }
+}
